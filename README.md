@@ -2,7 +2,7 @@
 
 ## Author
 Yueying (Sharon) Zhang
-yzk7973
+
 
 ## Project
 1. Topic: Question Answering
