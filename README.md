@@ -1,5 +1,17 @@
 # Text-Analytics-Independent-Project
 
+## Author
+Yueying (Sharon) Zhang
+yzk7973
+
+## Project
+1. Topic: Question Answering
+
+2. Task: The goal is to find the text for any new question and context provided. In this project, the answer to a question is always a part of the context and also a continuous span of context. So, the first stage of the task is to find the sentence containing the right answer. If time permits, the second stage will be to identify the correct answer from the predicted sentence from the first stage.
+
+3. Dataset: Stanford Question Answering Dataset (SQuAD) v2.0
+- Description: For each observation in the training set, we have a context, question, and text(answer). 
+
 ## Repo structure 
 ```
 ├── README.md                         <- You are here
