@@ -20,8 +20,6 @@ Yueying (Sharon) Zhang
 │
 ├── models.py                         <- Python modula used in api.py
 │
-├── infersent.pkl                     <- Sentence encoder pickle, generation process in notebooks
-│
 ├── data                              <- Folder that contains user input data used in prediction
 │
 ├── model                             <- Folder than contains trained model object
@@ -42,6 +40,7 @@ source pennylane/bin/activate
 pip install -r requirements.txt
 python -m spacy download en
 ```
+Download infersent.pkl from https://drive.google.com/file/d/1anWf1G1WDYAvfSoce534dgurX6UQfN4C/view?usp=sharing and save the file as pat_to_repo/infersent.pkl
 
 ### 2. Run the application
 Write one context in path_to_repo/data/context.txt and one question in path_to_repo/data/question.txt
