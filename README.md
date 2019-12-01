@@ -48,7 +48,7 @@ Download infersent.pkl from https://drive.google.com/file/d/1anWf1G1WDYAvfSoce53
  ```bash
 python api.py
  ```
-3. For Jupyter notebook:
+3. For Jupyter notebook in the same path of api.py:
  ```bash
 import requests
 url = 'http://127.0.0.1:5000/'
@@ -56,4 +56,9 @@ params ={'question_path': 'data/question.txt', 'context_path': 'data/context.txt
 response = requests.get(url, params)
 response.json()
  ```
+Or open a new terminal and direct the path_to_repo
+ ```bash
+curl -X GET http://127.0.0.1:5000/ -d question_path='data/question.txt' -d context_path='data/context.txt'
+ ```
+ 
 The predicted answer sentence will be both printed in terminal and saved in path_to_repo as a json file
