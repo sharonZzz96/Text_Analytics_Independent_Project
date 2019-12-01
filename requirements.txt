@@ -7,3 +7,5 @@ joblib==0.14.0
 torch==1.2.0
 spacy==2.2.1
 scikit-learn==0.20.3
+flask==1.0.2
+flask-restful==0.3.7
