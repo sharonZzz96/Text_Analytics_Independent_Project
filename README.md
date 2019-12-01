@@ -43,8 +43,17 @@ python -m spacy download en
 Download infersent.pkl from https://drive.google.com/file/d/1anWf1G1WDYAvfSoce534dgurX6UQfN4C/view?usp=sharing and save the file as pat_to_repo/infersent.pkl
 
 ### 2. Run the application
-Write one context in path_to_repo/data/context.txt and one question in path_to_repo/data/question.txt
+1. Write one context in path_to_repo/data/context.txt and one question in path_to_repo/data/question.txt
+2. Run api.py
  ```bash
 python api.py
+ ```
+3. For Jupyter notebook:
+ ```bash
+import requests
+url = 'http://127.0.0.1:5000/'
+params ={'question_path': 'data/question.txt', 'context_path': 'data/context.txt'}
+response = requests.get(url, params)
+response.json()
  ```
 The predicted answer sentence will be both printed in terminal and saved in path_to_repo as a json file
