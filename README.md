@@ -56,7 +56,7 @@ params ={'question_path': 'data/question.txt', 'context_path': 'data/context.txt
 response = requests.get(url, params)
 response.json()
  ```
-Or open a new terminal and direct the path_to_repo
+Or open a new terminal and direct to path_to_repo
  ```bash
 curl -X GET http://127.0.0.1:5000/ -d question_path='data/question.txt' -d context_path='data/context.txt'
  ```
